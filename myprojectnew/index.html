@@ -1,0 +1,938 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>电子商城</title>
+    <link rel="stylesheet" href="css/csschu.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="main_body">
+<!--登录界面-->
+<div id="entry">
+    <div class="formEntry">
+        <div class="entryWay"><!--登录方式-->
+            <p class="plainWay">普通登录</p>
+
+            <p class="phoneWay">短信登录</p>
+            <span>x</span>
+        </div>
+        <form action="1.php" method="post">
+            <span>账号</span><input id="uname" type="text" name="uname" placeholder="手机号/用户名/邮箱"/><br/>
+
+            <span>密码</span><input id="upwd" type="password" name="upwd" placeholder="请输入您的密码"/><br/>
+            <input class="chb" type="checkbox" name="chb" checked/><b>下次自动登录</b><br/>
+            <button type="submit">立即登录</button>
+        </form>
+        <hr color="#e8e8e8" width="400px" align="center"/>
+        <a href="#">注册新账号</a>|
+        <a href="#">忘记密码？</a>
+    </div>
+</div>
+<!--注册页面-->
+<div id="registration">
+    <div class="formReg">
+        <p class="nav_p">
+            欢迎注册XXX账号
+            <span>X</span>
+        </p>
+
+        <div class="nav_reg">
+            <p>手机注册</p>
+
+            <p>邮箱注册</p>
+
+            <div>
+                <span>已有账号,</span>
+                <a href="#">立即登录</a>
+            </div>
+        </div>
+        <div class="content_reg">
+            <form action="2.php">
+                <span>手机号</span>
+                <input id="userPhone" type="text" name="userPhone"/>
+                <br/>
+
+                <p>请输入您的手机号</p>
+                <span>验证码</span>
+                <input id="userNum" type="text" name="userNum"/>
+
+                <div id="b1">
+                    <canvas id="c1" width="120" height="40">
+                        您的浏览器不支持canvas元素！！！
+                    </canvas>
+                    <a href="#" id="a1">换一张</a>
+                </div>
+                <br/>
+
+                <p>请输入图中的字母或数字，不区分大小写</p>
+                <span>用户名</span>
+                <input id="userName" type="text" name="userName"/><br/>
+
+                <p>2-14个字符：英文、数字或中文</p>
+                <span>密码</span>
+                <input id="userpwd" type="password" name="userpwd"/><br/>
+
+                <p>6-20个字符(区分大小写)</p>
+                <span>确认密码</span>
+                <input id="user_pwd" type="password" name="user_pwd"/><br/>
+
+                <p>请再次输入密码</p>
+                <a id="btn_a" href="#">马上注册</a>
+                <input id="yes" type="checkbox" checked name="yes"/>我已经阅读并同意《360用户服务条款》
+            </form>
+        </div>
+    </div>
+</div>
+<!--头部 -->
+<div id="header">
+    <div id="top_top">
+        <div class="top_nav">
+            <ul class="lf">
+                <li>
+                    <a href="#">
+                        大客户采购
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        帮忙中心
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        收藏本站
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        商品入驻
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        老人手环申请
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        手机360商城
+                    </a>
+                </li>
+            </ul>
+            <ul class="rf">
+                <li>
+                    <a id="entryOne" href="#entry">
+                        登录
+                    </a>
+                </li>
+                <li>
+                    <a id="reg_first" href="#reg_first">
+                        注册
+                    </a>
+                </li>
+                <li>
+                    <i class="line_l">
+                    </i>
+                </li>
+                <li>
+                    <a href="#">
+                        F码购买
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        我的订单
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="ad_img">
+    </div>
+    <div id="search">
+        <a href="#">
+            <img src="img/1002.png">
+        </a>
+
+        <div id="search_child">
+            <input type="text" class="p1" placeholder="在这里有您想要的......">
+            </input>
+            <a href="#" class="p2">
+            </a>
+
+            <div id="child_t">
+                <a href="#">
+                    <i></i>
+                    我的购物车
+                    <span>(0)</span>
+                </a>
+            </div>
+        </div>
+        <div id="search_child1">
+            <ul>
+                <li>
+                    <a href="#">
+                        360手机N4A
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        360儿童手表
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        360儿童机器人
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        领取圣诞礼物
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        360安全路由5G
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="top_nav">
+        <p class="isNone">
+            <a href="#">
+                <i></i>
+                全部智能库品
+            </a>
+        </p>
+        <ul class="style_f">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="details.html">手机</a></li>
+            <li><a href="#">儿童手表</a></li>
+            <li><a href="#">摄像机</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#">儿童机器人</a></li>
+            <li><a href="#">智品牌</a></li>
+            <li><a href="#">积分商城</a></li>
+            <li><a href="#">社区</a></li>
+        </ul>
+        <!-- ********************************************左导航 -->
+        <div id="search_left" class="isBlock">
+            <ul>
+                <li>
+                    <a href="#">
+                        <b class="b1"></b>
+                        手机
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360手机 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360手机 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360手机 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360手机 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360手机 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <b class="b2"></b>
+                        蓝牙
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360蓝牙 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360蓝牙 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360蓝牙 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360蓝牙 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360蓝牙 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <b class="b3"></b>
+                        智能车品
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360智能车品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能车品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能车品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能车品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能车品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <b class="b4"></b>
+                        电脑
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360电脑 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360电脑 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360电脑 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360电脑 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360电脑 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <b class="b5"></b>
+                        游戏
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360游戏 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360游戏 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360游戏 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360游戏 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360游戏 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <b class="b6"></b>
+                        母婴用品
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360母婴用品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360母婴用品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360母婴用品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360母婴用品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360母婴用品 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <b class="b7"></b>
+                        智能机器人
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <b class="b7"></b>
+                        机器人
+                    </a>
+
+                    <div class="nav_title">
+                        <div class="nav_dl">
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a><a href="">360手机奇酷旗舰版</a><a href="">360手机奇酷青春版</a><a
+                                        href="">360手机N4S全网通版</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    360智能机器人 &gt;
+                                </dt>
+                                <dd>
+                                    <a href="">N4S骁龙版</a><a href="">360手机N4A</a><a href="">360手机Q5</a><a href="">360手机f4高配版</a><a
+                                        href="">360手机f4全网通</a><a
+                                        href="">360手机f4标准版</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 右广告 -->
+        <div id="search_right" class="isBlock">
+            <a href="">
+                <img src="img/1006.png">
+            </a>
+            <a href="">
+                <img src="img/1007.png">
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+<!--导航-广告-轮播-->
+<div class="ad_p">
+    <!-- ********************************************轮播 -->
+    <div class="content">
+        <a href="#"><img src="img/10102.webp"/></a><a href="#"><img src="img/lun_2.jpg"/></a><a href="#"><img
+            src="img/lun_3.jpg"/></a><a href="#"><img src="img/lun_4.jpg"/></a><a href="#"><img
+            src="img/10102.webp"/></a>
+    </div>
+</div>
+<!--体部-->
+<div class="main_top">
+    <p class="hot">热门推荐</p>
+    <a href="details.html">
+        <img src="img/001.webp">
+    </a>
+    <a href="#">
+        <img src="img/002.webp">
+    </a>
+    <a href="#">
+        <img src="img/003.webp">
+    </a>
+    <a href="#">
+        <img src="img/004.webp">
+    </a>
+    <a href="#">
+        <img src="img/0001.webp">
+    </a>
+    <a href="#">
+        <img src="img/0002.webp">
+    </a>
+    <a href="#">
+        <img src="img/0003.webp">
+    </a>
+</div>
+<div class="main_top">
+    <p class="hot">猜你喜欢</p>
+    <ul>
+        <li>
+            <img src="img/list_1.jpg">
+
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_2.png">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_3.jpg" class="font">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_4.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_5.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_6.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_7.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_8.jpg">
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="main_top">
+    <p class="hot">销量最高</p>
+    <ul>
+        <li>
+            <a href="#">
+            <img src="img/list_1.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_2.png">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_3.jpg" class="font">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_4.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_5.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_6.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_7.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/list_8.jpg">
+            </a>
+        </li>
+    </ul>
+
+</div>
+<!--尾部-->
+<footer>
+    <ul id="foot">
+        <li>
+            <b>7</b>
+            <a href="#">7天无理由退货</a>
+        </li>
+        <li>
+            <b>15</b>
+            <a href="#">15天免费换货</a>
+        </li>
+        <li>
+            <b>包</b>
+            <a href="#">满99元包邮</a>
+        </li>
+        <li>
+            <b>服</b>
+            <a href="#">手机特色服务</a>
+        </li>
+    </ul>
+    <div>
+        <dl class="soho">
+            <dt>帮忙中心</dt>
+            <dd>用户注册</dd>
+            <dd>用户中心与用户找回密码</dd>
+            <dd>购买指南</dd>
+            <dd>支付方式</dd>
+            <dd>配送与说明</dd>
+        </dl>
+        <dl class="soho">
+            <dt>帮忙中心</dt>
+            <dd>用户注册</dd>
+            <dd>用户中心与用户找回密码</dd>
+
+        </dl>
+        <dl class="soho">
+            <dt><a href="#">帮忙中心</a></dt>
+            <dd>用户注册</dd>
+            <dd>用户中心与用户找回密码</dd>
+            <dd>购买指南</dd>
+            <dd>支付方式</dd>
+
+        </dl>
+        <dl class="soho">
+            <dt>帮忙中心</dt>
+            <dd>用户注册</dd>
+            <dd>用户中心与用户找回密码</dd>
+            <dd>配送与说明</dd>
+        </dl>
+        <dl class="soho">
+            <dt>帮忙中心</dt>
+            <dd>用户注册</dd>
+
+        </dl>
+        <dl class="soho">
+            <dt>帮忙中心</dt>
+            <dd>用户注册</dd>
+            <dd>用户中心与用户找回密码</dd>
+            <dd>购买指南</dd>
+
+        </dl>
+    </div>
+    <p>后五商城©2013-2018 后五公司版权所有 京ICP备08011314号-43 京公网安备11000002000006号</p>
+</footer>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
